@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecoverIdVC" customModule="Camper" customModuleProvider="target">
+            <connections>
+                <outlet property="strokeV" destination="NTT-4Z-ESc" id="z9g-7w-SVs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-bO-ZFs">
+                    <rect key="frame" x="24" y="76" width="366" height="184"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascot-square" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-lb-yPn">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="Xz0-Nx-DP7"/>
+                                <constraint firstAttribute="height" constant="72" id="pw1-Wa-7rl"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTT-4Z-ESc" customClass="MascotDialog" customModule="Camper" customModuleProvider="target">
+                            <rect key="frame" x="80" y="0.0" width="286" height="72"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFc-gJ-sxp">
+                                    <rect key="frame" x="32" y="8" width="238" height="56"/>
+                                    <string key="text">계정정보 확인을 위해
+본인인증이 필요해요!</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="fFc-gJ-sxp" secondAttribute="trailing" constant="16" id="8Ns-v2-2Lo"/>
+                                <constraint firstAttribute="bottom" secondItem="fFc-gJ-sxp" secondAttribute="bottom" constant="8" id="Ecs-sY-iUv"/>
+                                <constraint firstItem="fFc-gJ-sxp" firstAttribute="leading" secondItem="NTT-4Z-ESc" secondAttribute="leading" constant="32" id="IzF-ED-lrf"/>
+                                <constraint firstItem="fFc-gJ-sxp" firstAttribute="top" secondItem="NTT-4Z-ESc" secondAttribute="top" constant="8" id="nSM-Wp-QDE"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJv-XF-aAb" customClass="CamperButton" customModule="Camper" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="96" width="366" height="55"/>
+                            <color key="backgroundColor" name="apple-bg"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="Oc0-6k-3Zg"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="본인인증하기"/>
+                            <connections>
+                                <action selector="authenticateAction:" destination="-1" eventType="touchUpInside" id="SdK-ET-gOc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="본인인증에 어려움이 있으신 분은 FAQ를 참고해주시기 바랍니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO6-VR-VPz">
+                            <rect key="frame" x="0.0" y="167" width="366" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="NTT-4Z-ESc" firstAttribute="leading" secondItem="4Kk-lb-yPn" secondAttribute="trailing" constant="8" id="6Da-wf-XR4"/>
+                        <constraint firstAttribute="bottom" secondItem="cO6-VR-VPz" secondAttribute="bottom" id="6bc-Vk-lgY"/>
+                        <constraint firstItem="4Kk-lb-yPn" firstAttribute="leading" secondItem="Jgf-bO-ZFs" secondAttribute="leading" id="9Uy-TY-gyg"/>
+                        <constraint firstAttribute="trailing" secondItem="NTT-4Z-ESc" secondAttribute="trailing" id="Hn3-a4-FBS"/>
+                        <constraint firstAttribute="trailing" secondItem="cO6-VR-VPz" secondAttribute="trailing" id="N8s-Dv-3bC"/>
+                        <constraint firstItem="NTT-4Z-ESc" firstAttribute="top" secondItem="Jgf-bO-ZFs" secondAttribute="top" id="TdM-Fy-uJ9"/>
+                        <constraint firstItem="oJv-XF-aAb" firstAttribute="leading" secondItem="Jgf-bO-ZFs" secondAttribute="leading" id="WBK-gm-wZi"/>
+                        <constraint firstAttribute="trailing" secondItem="oJv-XF-aAb" secondAttribute="trailing" id="cwI-nG-soT"/>
+                        <constraint firstItem="4Kk-lb-yPn" firstAttribute="top" secondItem="Jgf-bO-ZFs" secondAttribute="top" id="dtp-dc-EPZ"/>
+                        <constraint firstItem="cO6-VR-VPz" firstAttribute="top" secondItem="oJv-XF-aAb" secondAttribute="bottom" constant="16" id="gXD-ar-W8A"/>
+                        <constraint firstItem="NTT-4Z-ESc" firstAttribute="bottom" secondItem="4Kk-lb-yPn" secondAttribute="bottom" id="mtb-Uo-Zbl"/>
+                        <constraint firstItem="oJv-XF-aAb" firstAttribute="top" secondItem="4Kk-lb-yPn" secondAttribute="bottom" constant="24" id="sv2-if-ci2"/>
+                        <constraint firstItem="cO6-VR-VPz" firstAttribute="leading" secondItem="Jgf-bO-ZFs" secondAttribute="leading" id="trh-DO-F8P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jgf-bO-ZFs" secondAttribute="trailing" constant="24" id="3c7-g4-QKH"/>
+                <constraint firstItem="Jgf-bO-ZFs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="4Lp-l4-IGr"/>
+                <constraint firstItem="Jgf-bO-ZFs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="v51-9h-Ipe"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mascot-square" width="72.5" height="72.5"/>
+        <namedColor name="apple-bg">
+            <color red="0.2199999988079071" green="0.2199999988079071" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

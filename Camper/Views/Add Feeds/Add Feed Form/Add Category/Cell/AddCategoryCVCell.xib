@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AddCategoryCVCell" customModule="Camper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="222" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="222" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3h-dq-uT4">
+                        <rect key="frame" x="0.0" y="0.0" width="222" height="59"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자전거캠핑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-Rs-kXs">
+                                <rect key="frame" x="24" y="21" width="174" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MAW-Rs-kXs" firstAttribute="leading" secondItem="M3h-dq-uT4" secondAttribute="leading" constant="24" id="Fq5-6c-LbE"/>
+                            <constraint firstItem="MAW-Rs-kXs" firstAttribute="centerY" secondItem="M3h-dq-uT4" secondAttribute="centerY" id="TvH-gz-aCL"/>
+                            <constraint firstAttribute="trailing" secondItem="MAW-Rs-kXs" secondAttribute="trailing" constant="24" id="eZM-83-IMN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="M3h-dq-uT4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4lu-eg-f3b"/>
+                <constraint firstAttribute="trailing" secondItem="M3h-dq-uT4" secondAttribute="trailing" id="UMn-Nr-e6B"/>
+                <constraint firstAttribute="bottom" secondItem="M3h-dq-uT4" secondAttribute="bottom" id="bYX-5P-0CI"/>
+                <constraint firstItem="M3h-dq-uT4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eSv-Ta-J5a"/>
+            </constraints>
+            <size key="customSize" width="222" height="59"/>
+            <connections>
+                <outlet property="categoryL" destination="MAW-Rs-kXs" id="5ni-H0-jrB"/>
+                <outlet property="containerV" destination="M3h-dq-uT4" id="R5r-bl-kwq"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="59.933035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

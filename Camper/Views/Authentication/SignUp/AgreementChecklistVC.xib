@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AgreementChecklistVC" customModule="Camper" customModuleProvider="target">
+            <connections>
+                <outlet property="ageBtn" destination="GiX-93-y70" id="RzG-cm-oXL"/>
+                <outlet property="ageCheckIV" destination="s98-mn-Ih5" id="Rgs-Ex-97D"/>
+                <outlet property="agreeAllBtn" destination="yS8-az-aAk" id="RqY-Ag-G40"/>
+                <outlet property="agreeAllCheckIV" destination="nab-v1-s1E" id="g4d-4K-TFN"/>
+                <outlet property="marketingBtn" destination="xm5-V5-Nhi" id="jQF-yF-hji"/>
+                <outlet property="marketingCheckIV" destination="GkM-qH-bPA" id="CPQ-ln-b8J"/>
+                <outlet property="nextBtn" destination="Q5L-kG-a8F" id="1Hl-Ye-9GX"/>
+                <outlet property="privacyBtn" destination="jep-9S-fEg" id="9p1-zd-4rb"/>
+                <outlet property="privacyCheckIV" destination="BhX-hT-oiU" id="x4C-5K-KbF"/>
+                <outlet property="serviceBtn" destination="Zsh-X1-D1l" id="RbE-wu-cQ8"/>
+                <outlet property="serviceCheckIV" destination="9bM-7z-4lG" id="mJv-wr-jD2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raF-uM-xhm">
+                    <rect key="frame" x="24" y="76" width="366" height="412"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mascot-square" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-KS-iR8">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="72" id="bLX-Bv-I1b"/>
+                                <constraint firstAttribute="height" constant="72" id="nuj-Py-XxZ"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUX-gG-mGO" customClass="MascotDialog" customModule="Camper" customModuleProvider="target">
+                            <rect key="frame" x="80" y="0.0" width="286" height="72"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viX-2R-KNz">
+                                    <rect key="frame" x="32" y="8" width="238" height="56"/>
+                                    <string key="text">계정정보 확인을 위해
+본인인증이 필요해요!</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="viX-2R-KNz" firstAttribute="leading" secondItem="YUX-gG-mGO" secondAttribute="leading" constant="32" id="8hF-PF-GHB"/>
+                                <constraint firstAttribute="bottom" secondItem="viX-2R-KNz" secondAttribute="bottom" constant="8" id="gxs-yN-DAj"/>
+                                <constraint firstItem="viX-2R-KNz" firstAttribute="top" secondItem="YUX-gG-mGO" secondAttribute="top" constant="8" id="iXH-cd-Ole"/>
+                                <constraint firstAttribute="trailing" secondItem="viX-2R-KNz" secondAttribute="trailing" constant="16" id="yI4-v2-3KE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yS8-az-aAk" customClass="CamperViewButton" customModule="Camper" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="104" width="366" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-icon" translatesAutoresizingMaskIntoConstraints="NO" id="nab-v1-s1E">
+                                    <rect key="frame" x="0.0" y="19.5" width="16" height="16"/>
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="nab-v1-s1E" secondAttribute="height" multiplier="1:1" id="2TP-xU-hF2"/>
+                                        <constraint firstAttribute="width" constant="16" id="VWl-mZ-CbD"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모두 동의 (선택 정보 포함)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-6L-BR3">
+                                    <rect key="frame" x="32" y="17.5" width="334" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="mqx-6L-BR3" firstAttribute="centerY" secondItem="yS8-az-aAk" secondAttribute="centerY" id="7Rl-D1-HPF"/>
+                                <constraint firstItem="nab-v1-s1E" firstAttribute="centerY" secondItem="yS8-az-aAk" secondAttribute="centerY" id="Crr-o3-9Sz"/>
+                                <constraint firstAttribute="height" constant="55" id="SPu-sK-CzH"/>
+                                <constraint firstItem="mqx-6L-BR3" firstAttribute="leading" secondItem="nab-v1-s1E" secondAttribute="trailing" constant="16" id="iwC-xE-tGu"/>
+                                <constraint firstAttribute="trailing" secondItem="mqx-6L-BR3" secondAttribute="trailing" id="k6t-bm-9Oo"/>
+                                <constraint firstItem="nab-v1-s1E" firstAttribute="leading" secondItem="yS8-az-aAk" secondAttribute="leading" id="opL-09-cM8"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt7-d5-48o">
+                            <rect key="frame" x="0.0" y="175" width="366" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="wfn-JL-iyT"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="obs-Fv-gmM">
+                            <rect key="frame" x="0.0" y="192" width="366" height="220"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GiX-93-y70" customClass="CamperViewButton" customModule="Camper" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="366" height="55"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-icon" translatesAutoresizingMaskIntoConstraints="NO" id="s98-mn-Ih5">
+                                            <rect key="frame" x="0.0" y="19.5" width="16" height="16"/>
+                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="16" id="Fpb-ve-LH6"/>
+                                                <constraint firstAttribute="width" secondItem="s98-mn-Ih5" secondAttribute="height" multiplier="1:1" id="dLU-YD-47y"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[필수] 만 14세 이상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvE-Ry-U2e">
+                                            <rect key="frame" x="32" y="17.5" width="334" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="s98-mn-Ih5" firstAttribute="leading" secondItem="GiX-93-y70" secondAttribute="leading" id="1j1-19-4VC"/>
+                                        <constraint firstItem="yvE-Ry-U2e" firstAttribute="centerY" secondItem="GiX-93-y70" secondAttribute="centerY" id="2Ei-BZ-G9b"/>
+                                        <constraint firstAttribute="height" constant="55" id="9fa-Hj-op0"/>
+                                        <constraint firstItem="s98-mn-Ih5" firstAttribute="centerY" secondItem="GiX-93-y70" secondAttribute="centerY" id="Lez-H1-7g8"/>
+                                        <constraint firstItem="yvE-Ry-U2e" firstAttribute="leading" secondItem="s98-mn-Ih5" secondAttribute="trailing" constant="16" id="Nee-wG-R0u"/>
+                                        <constraint firstAttribute="trailing" secondItem="yvE-Ry-U2e" secondAttribute="trailing" id="omC-sw-Sx4"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arz-55-UYi">
+                                    <rect key="frame" x="0.0" y="55" width="366" height="55"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zsh-X1-D1l" customClass="CamperViewButton" customModule="Camper" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="55"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-icon" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-7z-4lG">
+                                                    <rect key="frame" x="0.0" y="19.5" width="16" height="16"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="9bM-7z-4lG" secondAttribute="height" multiplier="1:1" id="OpQ-63-zXS"/>
+                                                        <constraint firstAttribute="width" constant="16" id="RnW-sH-hfx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[필수] 서비스 이용약관 동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="578-dr-KeH">
+                                                    <rect key="frame" x="32" y="17.5" width="187" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="578-dr-KeH" firstAttribute="leading" secondItem="9bM-7z-4lG" secondAttribute="trailing" constant="16" id="S57-0a-ds0"/>
+                                                <constraint firstItem="9bM-7z-4lG" firstAttribute="leading" secondItem="Zsh-X1-D1l" secondAttribute="leading" id="VQD-Ns-PVR"/>
+                                                <constraint firstItem="578-dr-KeH" firstAttribute="centerY" secondItem="Zsh-X1-D1l" secondAttribute="centerY" id="VmZ-4e-iqw"/>
+                                                <constraint firstAttribute="height" constant="55" id="f9K-JP-xDC"/>
+                                                <constraint firstItem="9bM-7z-4lG" firstAttribute="centerY" secondItem="Zsh-X1-D1l" secondAttribute="centerY" id="iMP-6q-xNe"/>
+                                                <constraint firstAttribute="trailing" secondItem="578-dr-KeH" secondAttribute="trailing" id="zIs-qC-o7n"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7Z-Dh-EPH" customClass="UnderlineButton" customModule="Camper" customModuleProvider="target">
+                                            <rect key="frame" x="219" y="0.0" width="50" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="rWg-ad-6fe"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="보기"/>
+                                            <connections>
+                                                <action selector="moveToServicePage:" destination="-1" eventType="touchUpInside" id="7rh-cy-JeW"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Zsh-X1-D1l" firstAttribute="leading" secondItem="arz-55-UYi" secondAttribute="leading" id="57g-IT-SYz"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D7Z-Dh-EPH" secondAttribute="trailing" id="MA7-DH-2T6"/>
+                                        <constraint firstItem="D7Z-Dh-EPH" firstAttribute="leading" secondItem="Zsh-X1-D1l" secondAttribute="trailing" id="Npi-Ih-zw7"/>
+                                        <constraint firstAttribute="bottom" secondItem="D7Z-Dh-EPH" secondAttribute="bottom" id="RNs-e4-Js2"/>
+                                        <constraint firstItem="Zsh-X1-D1l" firstAttribute="top" secondItem="arz-55-UYi" secondAttribute="top" id="Rkt-xs-Ige"/>
+                                        <constraint firstAttribute="bottom" secondItem="Zsh-X1-D1l" secondAttribute="bottom" id="VDo-Xf-EOu"/>
+                                        <constraint firstItem="D7Z-Dh-EPH" firstAttribute="top" secondItem="arz-55-UYi" secondAttribute="top" id="tQo-bl-Iod"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Dt-fL-XTp">
+                                    <rect key="frame" x="0.0" y="110" width="366" height="55"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jep-9S-fEg" customClass="CamperViewButton" customModule="Camper" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="234" height="55"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-icon" translatesAutoresizingMaskIntoConstraints="NO" id="BhX-hT-oiU">
+                                                    <rect key="frame" x="0.0" y="19.5" width="16" height="16"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="BhX-hT-oiU" secondAttribute="height" multiplier="1:1" id="eiP-0d-lZc"/>
+                                                        <constraint firstAttribute="width" constant="16" id="qpx-zf-tKv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[필수] 개인정보 처리방침 동의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDx-EZ-hVl">
+                                                    <rect key="frame" x="32" y="17.5" width="202" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="yDx-EZ-hVl" firstAttribute="leading" secondItem="BhX-hT-oiU" secondAttribute="trailing" constant="16" id="4Ju-TK-DUt"/>
+                                                <constraint firstItem="BhX-hT-oiU" firstAttribute="centerY" secondItem="jep-9S-fEg" secondAttribute="centerY" id="8ss-Rw-fsG"/>
+                                                <constraint firstItem="BhX-hT-oiU" firstAttribute="leading" secondItem="jep-9S-fEg" secondAttribute="leading" id="Lz9-tD-PN5"/>
+                                                <constraint firstAttribute="height" constant="55" id="SnI-bx-2x3"/>
+                                                <constraint firstAttribute="trailing" secondItem="yDx-EZ-hVl" secondAttribute="trailing" id="dlz-J6-oh8"/>
+                                                <constraint firstItem="yDx-EZ-hVl" firstAttribute="centerY" secondItem="jep-9S-fEg" secondAttribute="centerY" id="ova-cD-qfS"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGb-zv-rb7" customClass="UnderlineButton" customModule="Camper" customModuleProvider="target">
+                                            <rect key="frame" x="234" y="0.0" width="50" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="jRr-FE-RQ3"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="보기"/>
+                                            <connections>
+                                                <action selector="moveToPrivacyPage:" destination="-1" eventType="touchUpInside" id="jct-IG-4WF"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="oGb-zv-rb7" firstAttribute="leading" secondItem="jep-9S-fEg" secondAttribute="trailing" id="2H5-pr-UAP"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oGb-zv-rb7" secondAttribute="trailing" id="46y-1s-ATf"/>
+                                        <constraint firstItem="jep-9S-fEg" firstAttribute="leading" secondItem="3Dt-fL-XTp" secondAttribute="leading" id="A05-LX-OsI"/>
+                                        <constraint firstItem="oGb-zv-rb7" firstAttribute="top" secondItem="3Dt-fL-XTp" secondAttribute="top" id="BUx-Mg-x1m"/>
+                                        <constraint firstAttribute="bottom" secondItem="oGb-zv-rb7" secondAttribute="bottom" id="Rgy-ed-ntp"/>
+                                        <constraint firstAttribute="bottom" secondItem="jep-9S-fEg" secondAttribute="bottom" id="U6p-wQ-fCe"/>
+                                        <constraint firstItem="jep-9S-fEg" firstAttribute="top" secondItem="3Dt-fL-XTp" secondAttribute="top" id="amn-B8-BkQ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ys-CB-Acc">
+                                    <rect key="frame" x="0.0" y="165" width="366" height="55"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xm5-V5-Nhi" customClass="CamperViewButton" customModule="Camper" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="261.5" height="55"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GkM-qH-bPA">
+                                                    <rect key="frame" x="0.0" y="19.5" width="16" height="16"/>
+                                                    <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="16" id="LZt-mA-O09"/>
+                                                        <constraint firstAttribute="width" secondItem="GkM-qH-bPA" secondAttribute="height" multiplier="1:1" id="fxs-OH-msh"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[선택] 광고성 정보 수신 및 마케팅 활용 동의" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajZ-7L-dOq">
+                                                    <rect key="frame" x="32" y="7" width="229.5" height="41"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="55" id="JiJ-IB-Wu0"/>
+                                                <constraint firstAttribute="trailing" secondItem="ajZ-7L-dOq" secondAttribute="trailing" id="eyo-30-x2f"/>
+                                                <constraint firstItem="GkM-qH-bPA" firstAttribute="leading" secondItem="xm5-V5-Nhi" secondAttribute="leading" id="g24-DC-aL8"/>
+                                                <constraint firstItem="ajZ-7L-dOq" firstAttribute="leading" secondItem="GkM-qH-bPA" secondAttribute="trailing" constant="16" id="pih-RX-SMe"/>
+                                                <constraint firstItem="ajZ-7L-dOq" firstAttribute="centerY" secondItem="xm5-V5-Nhi" secondAttribute="centerY" id="vex-HU-UJw"/>
+                                                <constraint firstItem="GkM-qH-bPA" firstAttribute="centerY" secondItem="xm5-V5-Nhi" secondAttribute="centerY" id="y91-Xb-6af"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcN-p7-LRT" customClass="UnderlineButton" customModule="Camper" customModuleProvider="target">
+                                            <rect key="frame" x="261.5" y="0.0" width="50" height="55"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="Y0H-wt-QVK"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="보기"/>
+                                            <connections>
+                                                <action selector="moveToMarketingPage:" destination="-1" eventType="touchUpInside" id="ZeC-ua-Bat"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="BcN-p7-LRT" firstAttribute="leading" secondItem="xm5-V5-Nhi" secondAttribute="trailing" id="CAJ-K9-Ku4"/>
+                                        <constraint firstItem="BcN-p7-LRT" firstAttribute="top" secondItem="6ys-CB-Acc" secondAttribute="top" id="LJx-yg-SZw"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BcN-p7-LRT" secondAttribute="trailing" id="QTf-m0-jUr"/>
+                                        <constraint firstItem="xm5-V5-Nhi" firstAttribute="top" secondItem="6ys-CB-Acc" secondAttribute="top" id="bjO-Sm-uUX"/>
+                                        <constraint firstAttribute="bottom" secondItem="BcN-p7-LRT" secondAttribute="bottom" id="qUf-Vv-4tj"/>
+                                        <constraint firstAttribute="bottom" secondItem="xm5-V5-Nhi" secondAttribute="bottom" id="tqI-Nu-C5n"/>
+                                        <constraint firstItem="xm5-V5-Nhi" firstAttribute="leading" secondItem="6ys-CB-Acc" secondAttribute="leading" id="wWx-RV-vOh"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="obs-Fv-gmM" firstAttribute="top" secondItem="pt7-d5-48o" secondAttribute="bottom" constant="16" id="09d-YE-sfV"/>
+                        <constraint firstItem="pt7-d5-48o" firstAttribute="top" secondItem="yS8-az-aAk" secondAttribute="bottom" constant="16" id="6lr-c6-NJo"/>
+                        <constraint firstItem="YUX-gG-mGO" firstAttribute="top" secondItem="raF-uM-xhm" secondAttribute="top" id="95u-bs-sWH"/>
+                        <constraint firstAttribute="bottom" secondItem="obs-Fv-gmM" secondAttribute="bottom" id="M8i-or-mBX"/>
+                        <constraint firstItem="pt7-d5-48o" firstAttribute="leading" secondItem="raF-uM-xhm" secondAttribute="leading" id="R0E-lO-gKs"/>
+                        <constraint firstItem="YUX-gG-mGO" firstAttribute="bottom" secondItem="bRv-KS-iR8" secondAttribute="bottom" id="RW1-EG-a9N"/>
+                        <constraint firstItem="yS8-az-aAk" firstAttribute="leading" secondItem="raF-uM-xhm" secondAttribute="leading" id="V27-AU-NjW"/>
+                        <constraint firstItem="yS8-az-aAk" firstAttribute="top" secondItem="bRv-KS-iR8" secondAttribute="bottom" constant="32" id="Xu3-xW-vKF"/>
+                        <constraint firstItem="obs-Fv-gmM" firstAttribute="leading" secondItem="raF-uM-xhm" secondAttribute="leading" id="bHr-7T-Y0Z"/>
+                        <constraint firstItem="YUX-gG-mGO" firstAttribute="leading" secondItem="bRv-KS-iR8" secondAttribute="trailing" constant="8" id="bMb-Lm-YFN"/>
+                        <constraint firstAttribute="trailing" secondItem="YUX-gG-mGO" secondAttribute="trailing" id="bZx-JR-yX5"/>
+                        <constraint firstItem="bRv-KS-iR8" firstAttribute="top" secondItem="raF-uM-xhm" secondAttribute="top" id="hKK-GU-2c8"/>
+                        <constraint firstAttribute="trailing" secondItem="yS8-az-aAk" secondAttribute="trailing" id="jls-YX-rMw"/>
+                        <constraint firstItem="bRv-KS-iR8" firstAttribute="leading" secondItem="raF-uM-xhm" secondAttribute="leading" id="sJR-Wm-CL0"/>
+                        <constraint firstAttribute="trailing" secondItem="pt7-d5-48o" secondAttribute="trailing" id="yeg-qX-f8C"/>
+                        <constraint firstAttribute="trailing" secondItem="obs-Fv-gmM" secondAttribute="trailing" id="z8b-kS-50X"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5L-kG-a8F" customClass="CamperButton" customModule="Camper" customModuleProvider="target">
+                    <rect key="frame" x="24" y="807" width="366" height="55"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Dv3-xt-EfV"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="동의하고 가입하기"/>
+                    <connections>
+                        <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="cFZ-Em-Hdy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="raF-uM-xhm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="3rQ-xn-TsC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q5L-kG-a8F" secondAttribute="bottom" id="A9n-9E-I1G"/>
+                <constraint firstItem="raF-uM-xhm" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="Pgu-qS-XQQ"/>
+                <constraint firstItem="Q5L-kG-a8F" firstAttribute="trailing" secondItem="raF-uM-xhm" secondAttribute="trailing" id="Rrr-HK-tHd"/>
+                <constraint firstItem="Q5L-kG-a8F" firstAttribute="leading" secondItem="raF-uM-xhm" secondAttribute="leading" id="Vhb-xC-pSW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="raF-uM-xhm" secondAttribute="trailing" constant="24" id="aok-yj-SHZ"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check-icon" width="62.5" height="57.5"/>
+        <image name="mascot-square" width="72.5" height="72.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

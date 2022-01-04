@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="UserShimmerTVCell" customModule="Camper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWQ-bg-s5w" customClass="ShimmerView" customModule="Camper" customModuleProvider="target">
+                        <rect key="frame" x="24" y="16" width="366" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UhQ-hX-V54">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOq-xF-puf" customClass="RoundedView" customModule="Camper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                        <color key="backgroundColor" name="shimmer-bg"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qOq-xF-puf" secondAttribute="height" multiplier="1:1" id="v9V-SM-Ghf"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="unD-ym-lGl">
+                                        <rect key="frame" x="58" y="0.0" width="183" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-Qr-oJL" customClass="RoundedFullView" customModule="Camper" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="21"/>
+                                                <color key="backgroundColor" name="shimmer-bg"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="2Bi-0Q-Ioq"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FkD-Pi-oLi" customClass="RoundedFullView" customModule="Camper" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="29" width="128" height="21"/>
+                                                <color key="backgroundColor" name="shimmer-bg"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="bCl-6L-nfm"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ct2-Qr-oJL" firstAttribute="top" secondItem="unD-ym-lGl" secondAttribute="top" id="4fE-DN-8cn"/>
+                                            <constraint firstItem="ct2-Qr-oJL" firstAttribute="leading" secondItem="unD-ym-lGl" secondAttribute="leading" id="Ae1-2B-4yB"/>
+                                            <constraint firstItem="FkD-Pi-oLi" firstAttribute="leading" secondItem="ct2-Qr-oJL" secondAttribute="leading" id="YrM-tQ-Wky"/>
+                                            <constraint firstItem="FkD-Pi-oLi" firstAttribute="leading" secondItem="unD-ym-lGl" secondAttribute="leading" id="dVx-LN-kV8"/>
+                                            <constraint firstAttribute="trailing" secondItem="ct2-Qr-oJL" secondAttribute="trailing" id="sbf-ex-PZF"/>
+                                            <constraint firstAttribute="bottom" secondItem="FkD-Pi-oLi" secondAttribute="bottom" id="sbl-8Q-kGm"/>
+                                            <constraint firstItem="FkD-Pi-oLi" firstAttribute="top" secondItem="ct2-Qr-oJL" secondAttribute="bottom" constant="8" id="waL-8t-156"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="unD-ym-lGl" secondAttribute="trailing" id="32y-Sa-oVz"/>
+                                    <constraint firstItem="qOq-xF-puf" firstAttribute="top" secondItem="UhQ-hX-V54" secondAttribute="top" id="79E-QY-TB3"/>
+                                    <constraint firstItem="ct2-Qr-oJL" firstAttribute="width" secondItem="UhQ-hX-V54" secondAttribute="width" multiplier="0.5" id="Fxn-FJ-COZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="unD-ym-lGl" secondAttribute="bottom" id="Gie-re-gJl"/>
+                                    <constraint firstItem="unD-ym-lGl" firstAttribute="leading" secondItem="qOq-xF-puf" secondAttribute="trailing" constant="16" id="H3F-n2-sOP"/>
+                                    <constraint firstItem="FkD-Pi-oLi" firstAttribute="width" secondItem="UhQ-hX-V54" secondAttribute="width" multiplier="0.35" id="e0H-jg-CgN"/>
+                                    <constraint firstItem="unD-ym-lGl" firstAttribute="top" secondItem="UhQ-hX-V54" secondAttribute="top" id="iyd-ic-M0t"/>
+                                    <constraint firstItem="qOq-xF-puf" firstAttribute="leading" secondItem="UhQ-hX-V54" secondAttribute="leading" id="kyP-h5-bk1"/>
+                                    <constraint firstAttribute="bottom" secondItem="qOq-xF-puf" secondAttribute="bottom" id="sd3-b6-Hmp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UhQ-hX-V54" firstAttribute="leading" secondItem="tWQ-bg-s5w" secondAttribute="leading" id="5qP-kZ-KGV"/>
+                            <constraint firstAttribute="trailing" secondItem="UhQ-hX-V54" secondAttribute="trailing" id="MYK-IB-2gh"/>
+                            <constraint firstItem="UhQ-hX-V54" firstAttribute="top" secondItem="tWQ-bg-s5w" secondAttribute="top" id="RNm-Nz-EcU"/>
+                            <constraint firstAttribute="bottom" secondItem="UhQ-hX-V54" secondAttribute="bottom" id="gRB-yF-2fb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tWQ-bg-s5w" secondAttribute="trailing" constant="24" id="REp-uz-Fce"/>
+                    <constraint firstItem="tWQ-bg-s5w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="cYa-Hx-mHe"/>
+                    <constraint firstAttribute="bottom" secondItem="tWQ-bg-s5w" secondAttribute="bottom" constant="16" id="iTS-6B-UzB"/>
+                    <constraint firstItem="tWQ-bg-s5w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="rDi-Xf-dqC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentV" destination="UhQ-hX-V54" id="qkp-2C-bn0"/>
+                <outlet property="shimmerV" destination="tWQ-bg-s5w" id="JTD-8J-VrN"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="57.254464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="shimmer-bg">
+            <color red="0.80000001192092896" green="0.80000001192092896" blue="0.80000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

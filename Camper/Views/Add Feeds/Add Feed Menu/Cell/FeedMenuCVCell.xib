@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeedMenuCVCell" customModule="Camper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="254"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="254"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJN-Ss-1IG">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="254"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kpn-MM-UGa">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="254"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="side-menu-bg"/>
+                        <constraints>
+                            <constraint firstItem="kpn-MM-UGa" firstAttribute="leading" secondItem="AJN-Ss-1IG" secondAttribute="leading" id="66E-mx-etX"/>
+                            <constraint firstAttribute="trailing" secondItem="kpn-MM-UGa" secondAttribute="trailing" id="90M-XX-rkz"/>
+                            <constraint firstAttribute="bottom" secondItem="kpn-MM-UGa" secondAttribute="bottom" id="FLw-lb-zYy"/>
+                            <constraint firstItem="kpn-MM-UGa" firstAttribute="top" secondItem="AJN-Ss-1IG" secondAttribute="top" id="TPm-ei-uF6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="AJN-Ss-1IG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hws-8y-oam"/>
+                <constraint firstItem="AJN-Ss-1IG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PlJ-Ot-rQ9"/>
+                <constraint firstAttribute="trailing" secondItem="AJN-Ss-1IG" secondAttribute="trailing" id="Ylf-hg-kgO"/>
+                <constraint firstAttribute="bottom" secondItem="AJN-Ss-1IG" secondAttribute="bottom" id="sIl-Eq-Kx8"/>
+            </constraints>
+            <size key="customSize" width="160" height="254"/>
+            <connections>
+                <outlet property="feedIV" destination="kpn-MM-UGa" id="kTM-dL-wub"/>
+                <outlet property="feedV" destination="AJN-Ss-1IG" id="c8H-rk-mpU"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="135.9375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="side-menu-bg">
+            <color red="0.097999997437000275" green="0.097999997437000275" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

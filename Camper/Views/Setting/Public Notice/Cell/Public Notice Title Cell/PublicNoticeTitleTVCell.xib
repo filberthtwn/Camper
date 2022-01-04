@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="PublicNoticeTitleTVCell" customModule="Camper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="공지1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dlc-fm-opj">
+                        <rect key="frame" x="24" y="16" width="366" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2021.12.31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSq-j0-OFa">
+                        <rect key="frame" x="24" y="41" width="366" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9j-1R-idW">
+                        <rect key="frame" x="16" y="60" width="382" height="1"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="k7E-yU-u8B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="E9j-1R-idW" secondAttribute="bottom" constant="16" id="0Cf-GG-JJo"/>
+                    <constraint firstItem="eSq-j0-OFa" firstAttribute="leading" secondItem="Dlc-fm-opj" secondAttribute="leading" id="10W-NA-JAu"/>
+                    <constraint firstItem="Dlc-fm-opj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="LoA-sp-b6L"/>
+                    <constraint firstAttribute="trailing" secondItem="Dlc-fm-opj" secondAttribute="trailing" constant="24" id="Rzg-l3-bCU"/>
+                    <constraint firstItem="E9j-1R-idW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WuY-W3-lyi"/>
+                    <constraint firstItem="eSq-j0-OFa" firstAttribute="trailing" secondItem="Dlc-fm-opj" secondAttribute="trailing" id="kmh-gK-GAe"/>
+                    <constraint firstAttribute="trailing" secondItem="E9j-1R-idW" secondAttribute="trailing" constant="16" id="lsy-fO-cGj"/>
+                    <constraint firstItem="Dlc-fm-opj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ofU-7G-qUh"/>
+                    <constraint firstItem="eSq-j0-OFa" firstAttribute="top" secondItem="Dlc-fm-opj" secondAttribute="bottom" constant="4" id="ssJ-1A-V1D"/>
+                    <constraint firstItem="E9j-1R-idW" firstAttribute="top" secondItem="eSq-j0-OFa" secondAttribute="bottom" constant="8" id="u3M-kL-ThK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="createdAtL" destination="eSq-j0-OFa" id="if1-rz-qfw"/>
+                <outlet property="titleL" destination="Dlc-fm-opj" id="ZjS-AJ-oRL"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="64.620535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

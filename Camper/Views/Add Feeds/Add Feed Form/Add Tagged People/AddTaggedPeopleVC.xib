@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTaggedPeopleVC" customModule="Camper" customModuleProvider="target">
+            <connections>
+                <outlet property="addPeopleBtn" destination="ouO-DM-Ecs" id="OX4-eK-pfZ"/>
+                <outlet property="taggedPeopleTV" destination="IJt-Va-Osf" id="Cuq-pT-d8z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IJt-Va-Osf">
+                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VaC-0a-uVf"/>
+                        <outlet property="delegate" destination="-1" id="Qfz-3j-YUw"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9f-mO-c5S">
+                    <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouO-DM-Ecs">
+                            <rect key="frame" x="24" y="0.0" width="122" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="aXn-Cr-M4C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="+ 추가로 태그하기">
+                                <color key="titleColor" name="primary-text"/>
+                            </state>
+                            <connections>
+                                <action selector="addTaggedPeople:" destination="-1" eventType="touchUpInside" id="yJ3-P5-fH9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ouO-DM-Ecs" firstAttribute="leading" secondItem="X9f-mO-c5S" secondAttribute="leading" constant="24" id="MBx-wG-AJt"/>
+                        <constraint firstAttribute="bottom" secondItem="ouO-DM-Ecs" secondAttribute="bottom" id="pbQ-3n-jAz"/>
+                        <constraint firstItem="ouO-DM-Ecs" firstAttribute="top" secondItem="X9f-mO-c5S" secondAttribute="top" id="wbZ-pB-dLf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IJt-Va-Osf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="07t-Yr-XZK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="X9f-mO-c5S" secondAttribute="trailing" id="B09-LL-Pnt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IJt-Va-Osf" secondAttribute="trailing" id="SPT-2e-Ejx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IJt-Va-Osf" secondAttribute="bottom" id="cWo-rg-Yca"/>
+                <constraint firstItem="X9f-mO-c5S" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="gJ1-GI-ynp"/>
+                <constraint firstItem="IJt-Va-Osf" firstAttribute="top" secondItem="X9f-mO-c5S" secondAttribute="bottom" id="mbS-AV-SGa"/>
+                <constraint firstItem="X9f-mO-c5S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xUb-qY-4DT"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="56.919642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="primary-text">
+            <color red="1" green="0.36500000953674316" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
